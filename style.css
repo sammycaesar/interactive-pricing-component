@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
 
+:root {
+  --color-grayish-blue: hsl(225, 20%, 60%);
+  --color-dark-blue: hsl(227, 35%, 25%);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -26,7 +31,7 @@ h1 {
 }
 
 p {
-  color: hsl(225, 20%, 60%);
+  color: var(--color-grayish-blue);
 }
 
 .message {
@@ -40,10 +45,42 @@ p {
 }
 
 .pricing-card {
+  display: flex;
   flex-direction: column;
   background-color: white;
   height: 400px;
   width: 550px;
   border-radius: 8px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.pricing-info {
+  display: inline-flex;
+  justify-content: space-evenly;
+
+  margin: 4rem 0 2rem 0;
+}
+
+.pageviews {
+  color: var(--color-grayish-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  font-weight: 800;
+}
+
+.per-month {
+  color: var(--color-grayish-blue);
+  letter-spacing: 0.05rem;
+  font-weight: 600;
+}
+
+.per-month span {
+  color: var(--color-dark-blue);
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+/* Slider */
+.slider {
+  max-width: 100%;
 }
