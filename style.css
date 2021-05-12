@@ -16,6 +16,7 @@ body {
   background-color: hsl(230, 100%, 99%);
   background-image: url(/images/bg-pattern.svg);
   background-repeat: no-repeat;
+  background-size: 100vw 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,7 +50,7 @@ p {
   flex-direction: column;
   background-color: white;
   height: 400px;
-  width: 550px;
+  width: 600px;
   border-radius: 8px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -57,12 +58,16 @@ p {
 .pricing-info,
 .features {
   display: inline-flex;
-  justify-content: space-evenly;
   margin: 3.5rem 0 2rem 0;
 }
 
+.pricing-info {
+  justify-content: space-evenly;
+}
+
 .features {
-  margin-top: 2rem;
+  margin: 2rem 4rem;
+  justify-content: space-between;
 }
 
 .pageviews {
@@ -123,7 +128,7 @@ p {
   justify-content: center;
   color: var(--color-grayish-blue);
   font-size: 0.8rem;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
   border-bottom: 1px solid hsl(224, 65%, 95%);
 }
 
@@ -201,8 +206,8 @@ p {
 }
 
 .btn {
-  width: 10rem;
-  padding: 0.8rem 0.75rem;
+  width: 11rem;
+  padding: 0.9rem 0rem;
   background-color: var(--color-dark-blue);
   border-radius: 5rem;
   border: none;
@@ -210,7 +215,7 @@ p {
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.05rem;
-  margin: 1rem 0 0 0;
+  margin: 1rem 0;
 }
 
 .icon-check {
