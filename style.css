@@ -16,7 +16,7 @@ body {
   background-color: hsl(230, 100%, 99%);
   background-image: url(/images/bg-pattern.svg);
   background-repeat: no-repeat;
-  background-size: 100vw 40vh;
+  background-size: 100vw 60%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,9 +35,12 @@ p {
   color: var(--color-grayish-blue);
 }
 
+.hidden {
+  display: none;
+}
+
 .message {
-  margin-top: -25rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   padding: 2rem;
   background-image: url(/images/pattern-circles.svg);
   background-repeat: no-repeat;
@@ -80,12 +83,18 @@ p {
 .per-month {
   color: var(--color-grayish-blue);
   font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 1.25px;
+  position: relative;
+  bottom: 14px;
 }
 
 .per-month span {
   color: var(--color-dark-blue);
   font-size: 2.5rem;
   font-weight: 800;
+  position: relative;
+  top: 14px;
 }
 
 /* Slider */
@@ -216,8 +225,49 @@ p {
   font-weight: 600;
   letter-spacing: 0.05rem;
   margin: 1rem 0;
+  cursor: pointer;
 }
 
 .icon-check {
   padding-right: 0.75rem;
+}
+
+@media screen and (max-width: 768px) {
+  
+  body {
+    background-size: 100vw 50%;
+  }
+
+  .message {
+    margin-bottom: 1rem;
+    padding: 1rem 5rem;
+    background-image: url(/images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 25%;
+  }
+  
+  .pricing-card {
+    width: 80%;
+    height: 50%;
+    margin: 2rem;
+  }
+
+  .pricing-info,
+.features {
+  display: block;
+}
+
+.billing-info {
+  font-size: 0.7rem;
+}
+
+.monthly {
+  position: relative;
+  padding: 0 1rem 0 0;
+}
+
+.feature-content {
+  text-align:center;
+  padding-bottom: 10px;
 }

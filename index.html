@@ -24,19 +24,34 @@
 
       <div class="pricing-card">
         <div class="pricing-info">
-          <div id="pageviews" class="pageviews">100k Pageviews</div>
-          <div id="pricing" class="per-month"><span>$16.00</span> /month</div>
+          <div class="pageviews"><span id="pageviews"></span> Pageviews</div>
+          <div class="per-month">
+            <span>$</span><span id="price">16.00</span>
+            <span id="discount-price" class="hidden">6</span id="month-text">/month</span>
+          </div>
         </div>
 
         <div class="slider">
-          <input id="range" class="range" type="range" min="0" max="0" />
+          <input
+            id="range"
+            class="range"
+            type="range"
+            min="1"
+            max="5"
+            value="3"
+          />
         </div>
 
         <div class="billing-info">
           <div class="monthly">Monthly Billing</div>
           <div class="switch-wrapper">
             <label class="switch-label">
-              <input class="switch-input" type="checkbox" name="text" />
+              <input
+                class="switch-input"
+                id="switch"
+                type="checkbox"
+                name="text"
+              />
               <span class="switch"></span>
             </label>
           </div>
