@@ -21,7 +21,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100vh;
+  max-height: 100vh;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -207,6 +207,17 @@ p {
   margin-left: 0.5rem;
 }
 
+.discount-mobile {
+  display: none;
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: hsl(15, 100%, 70%);
+  background: hsl(14, 92%, 95%);
+  border-radius: 10px;
+  padding: 0 0.25rem;
+  margin-left: 0.5rem;
+}
+
 .feature-content {
   font-size: 12px;
   color: var(--color-grayish-blue);
@@ -232,25 +243,35 @@ p {
   padding-right: 0.75rem;
 }
 
+/* Mobile view */
+
 @media screen and (max-width: 768px) {
   
   body {
     background-size: 100vw 50%;
+    overflow:visible;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .message p {
+    padding: 0rem 3rem;
   }
 
   .message {
-    margin-bottom: 1rem;
-    padding: 1rem 5rem;
+    margin: 8rem 0rem 0rem 0rem;
     background-image: url(/images/pattern-circles.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: 25%;
+    background-size: 45%;
   }
   
   .pricing-card {
-    width: 80%;
+    width: 87%;
     height: 50%;
-    margin: 2rem;
+    margin: 1.5rem;
   }
 
   .pricing-info,
@@ -270,4 +291,34 @@ p {
 .feature-content {
   text-align:center;
   padding-bottom: 10px;
+}
+
+.pricing-info {
+  margin: 2rem 0 4rem 0;
+}
+
+.per-month {
+  margin-top: 6rem;
+  margin-bottom: 1.5rem;
+}
+
+.slider {
+margin-top: -12rem;
+}
+
+.billing-info {
+  
+  padding: 4rem 0 1.5rem 0;
+}
+
+.discount {
+  display: none;
+}
+
+.discount-mobile {
+  display: block;
+}
+
+.features {
+  margin: 1rem 4rem;
 }
