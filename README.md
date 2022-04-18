@@ -1,3 +1,5 @@
+View the website live here: https://letspriceyourviews.netlify.app/
+
 # Interactive pricing component
 
 ![Design preview for the Interactive pricing component coding challenge](./design/desktop-preview.jpg)
